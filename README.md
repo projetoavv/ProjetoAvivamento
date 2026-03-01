@@ -1,10 +1,11 @@
-# 🌟 Avivamento - Projeto de Doação
+# Avivamento - Projeto de Doação
 
-Site desenvolvido para apoiar ações de arrecadação de alimentos do Grupo de Oração do município de Ribeirão das Neves - MG.
+Site desenvolvido para apoiar ações de arrecadação de alimentos de Grupos de Oração do município de Ribeirão das Neves - MG.
 
-## 📋 Sobre o Projeto
+## Sobre o Projeto
 
-Este site foi desenvolvido como parte de um **projeto extensionista** voltado à inclusão digital e apoio social. A plataforma facilita a comunicação e organização das ações de arrecadação de alimentos, conectando doadores, beneficiários e voluntários de forma simples e transparente.
+Este site foi desenvolvido como parte de um **projeto extensionista** voltado à inclusão digital e apoio social.
+A plataforma facilita a comunicação e organização das ações de arrecadação de alimentos, conectando doadores, beneficiários e voluntários de forma simples e transparente.
 
 ### Objetivos
 
@@ -13,7 +14,7 @@ Este site foi desenvolvido como parte de um **projeto extensionista** voltado à
 - Facilitar a comunicação com a comunidade local
 - Contribuir para o **ODS 02: Fome zero e agricultura sustentável**
 
-## 🎯 Funcionalidades
+## Funcionalidades
 
 - **Página Inicial**: Apresentação do projeto, estatísticas e informações sobre como funciona
 - **Quero Doar**: Formulário para doadores realizarem doações de alimentos e roupas
@@ -22,7 +23,7 @@ Este site foi desenvolvido como parte de um **projeto extensionista** voltado à
 - **Pontos de Encontro**: Locais de coleta e distribuição de doações
 - **Integração WhatsApp**: Botão flutuante para contato direto
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **HTML5**: Estrutura semântica e acessível
 - **CSS3**: Estilização moderna com variáveis CSS, animações e transições suaves
@@ -30,7 +31,7 @@ Este site foi desenvolvido como parte de um **projeto extensionista** voltado à
 - **Google Fonts**: Tipografia Inter para melhor legibilidade
 - **Design Responsivo**: Adaptação para diferentes tamanhos de tela
 
-## 📁 Estrutura de Arquivos
+## Estrutura de Arquivos
 
 ```
 Projeto/
@@ -50,7 +51,7 @@ Projeto/
 └── README.md              # Este arquivo
 ```
 
-## 🚀 Como Usar
+## Como Usar
 
 ### Visualização Local
 
@@ -65,7 +66,7 @@ Projeto/
 - **Imagens**: Substitua as URLs das imagens pelos seus próprios recursos
 - **WhatsApp**: Atualize o número do WhatsApp no link (procure por `wa.me`)
 
-## 🎨 Características de Design
+## Características de Design
 
 ### Paleta de Cores
 - **Azul Principal**: Tons suaves de azul para transmitir confiança e serenidade
@@ -83,7 +84,7 @@ Projeto/
 - Menu hambúrguer para dispositivos móveis
 - Imagens e textos que se ajustam automaticamente
 
-## 📱 Páginas do Site
+## Páginas do Site
 
 ### Página Inicial (`index.html`)
 - Hero section com chamada para ação
@@ -109,7 +110,7 @@ Projeto/
 - Informações sobre como ajudar
 - Benefícios de ser voluntário
 
-## 🎓 Projeto Extensionista
+## Projeto Extensionista
 
 Este projeto faz parte das **Atividades Extensionistas** da UNINTER, especificamente:
 
@@ -119,16 +120,16 @@ Este projeto faz parte das **Atividades Extensionistas** da UNINTER, especificam
 - **ODS**: 02 - Fome zero e agricultura sustentável
 
 ### Setor de Aplicação
-Grupo de Oração do município de Ribeirão das Neves - MG
+Grupos de Oração do município de Ribeirão das Neves - MG
 
-## 👤 Autor
-**Paulo Henrique Barbosa**  
+## Autor
+**Paulo Barbosa**  
 RU: 5151223
 
-## 📝 Licença
+## Licença
 
 Este projeto foi desenvolvido para fins acadêmicos e de extensão comunitária.
 
-## 🤝 Contribuições
+## Contribuições
 
-Este é um projeto acadêmico, mas sugestões e melhorias são bem-vindas!
+Esta página surgiu a partir de um projeto acadêmico, mas sugestões e melhorias são bem-vindas!
