@@ -35,7 +35,7 @@ O objetivo é oferecer um meio simples de organizar campanhas de arrecadação, 
 ```
 ProjetoAvivamento/
 │
-├── leiame.md               # Este arquivo
+├── readme.md               # Este arquivo
 ├── index.html              # Página inicial
 │
 ├── pages/
