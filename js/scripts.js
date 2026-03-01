@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     /* ---------- FORM SUBMISSION with validation + UI feedback ---------- */
+    /*
     function showToast(message, kind = 'info') {
         const t = document.createElement('div');
         t.className = `toast toast-${kind}`;
@@ -49,9 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
         setTimeout(() => t.classList.remove('visible'), 4000);
         setTimeout(() => t.remove(), 4500);
     }
-
+    
     async function submitFormWithUI(form, url) {
-        // client-side validity
         if (!form.checkValidity()) {
             form.reportValidity();
             return;
@@ -61,13 +61,14 @@ document.addEventListener('DOMContentLoaded', function () {
         submitBtn.disabled = true;
         submitBtn.textContent = 'Enviando...';
         const data = Object.fromEntries(new FormData(form).entries());
-        // If the form includes a consent field, enforce it
+    
         if (form.querySelector('[name="consent"]') && !data.consent) {
             showToast('Por favor aceite o consentimento.', 'warning');
             submitBtn.disabled = false;
             submitBtn.textContent = originalText;
             return;
         }
+    
         try {
             const res = await fetch(url, {
                 method: 'POST',
@@ -75,7 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 body: JSON.stringify(data)
             });
             if (!res.ok) throw new Error('Network');
-            // success UI
             showToast('Enviado com sucesso. Obrigado!', 'success');
             form.reset();
         } catch (err) {
@@ -86,17 +86,37 @@ document.addEventListener('DOMContentLoaded', function () {
             submitBtn.textContent = originalText;
         }
     }
-
+    
     const donationForm = document.getElementById('donation-form');
-    if (donationForm) donationForm.addEventListener('submit', (e) => { e.preventDefault(); submitFormWithUI(donationForm, '/api/donate'); });
+    if (donationForm) donationForm.addEventListener('submit', (e) => { 
+        e.preventDefault(); 
+        submitFormWithUI(donationForm, '/api/donate'); 
+    });
+    
     const requestForm = document.getElementById('request-form');
-    if (requestForm) requestForm.addEventListener('submit', (e) => { e.preventDefault(); submitFormWithUI(requestForm, '/api/receive'); });
+    if (requestForm) requestForm.addEventListener('submit', (e) => { 
+        e.preventDefault(); 
+        submitFormWithUI(requestForm, '/api/receive'); 
+    });
+    
     const volunteerForm = document.getElementById('volunteer-form');
-    if (volunteerForm) volunteerForm.addEventListener('submit', (e) => { e.preventDefault(); submitFormWithUI(volunteerForm, '/api/volunteer'); });
+    if (volunteerForm) volunteerForm.addEventListener('submit', (e) => { 
+        e.preventDefault(); 
+        submitFormWithUI(volunteerForm, '/api/volunteer'); 
+    });
+    
     const groupForm = document.getElementById('group-form');
-    if (groupForm) groupForm.addEventListener('submit', (e) => { e.preventDefault(); submitFormWithUI(groupForm, '/api/group'); });
+    if (groupForm) groupForm.addEventListener('submit', (e) => { 
+        e.preventDefault(); 
+        submitFormWithUI(groupForm, '/api/group'); 
+    });
+    
     const feedbackForm = document.getElementById('feedback-form');
-    if (feedbackForm) feedbackForm.addEventListener('submit', (e) => { e.preventDefault(); submitFormWithUI(feedbackForm, '/api/feedback'); });
+    if (feedbackForm) feedbackForm.addEventListener('submit', (e) => { 
+        e.preventDefault(); 
+        submitFormWithUI(feedbackForm, '/api/feedback'); 
+    });
+    */
 
     /* ---------- MAP (Leaflet) ---------- */
     const mapEl = document.getElementById('map');
@@ -155,8 +175,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const methodRadios = document.querySelectorAll('input[name="donation_method"]');
     function updateMethodBlocks(){
         const val = document.querySelector('input[name="donation_method"]:checked')?.value;
-        document.getElementById('pixInfo').style.display = val === 'pix' ? 'block' : 'none';
-        document.getElementById('agendamentoBlock').style.display = val === 'agendamento' ? 'block' : 'none';
+        const pix = document.getElementById('pixInfo');
+        const ag = document.getElementById('agendamentoBlock');
+        if (pix) pix.style.display = val === 'pix' ? 'block' : 'none';
+        if (ag) ag.style.display = val === 'agendamento' ? 'block' : 'none';
     }
     methodRadios.forEach(r => r.addEventListener('change', updateMethodBlocks));
     updateMethodBlocks();
@@ -180,8 +202,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }
             donateModal.setAttribute('aria-hidden','true');
             // submit using existing handler
-            submitFormWithUI(form, '/api/donate');
+            // submitFormWithUI(form, '/api/donate');
+            form.submit(); // envio normal para FormSubmit
         });
     }
 });
+
 
