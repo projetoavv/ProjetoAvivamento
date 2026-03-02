@@ -37,12 +37,6 @@ O envio é realizado por meio de requisição HTTP do tipo POST para o serviço 
 Essa integração permite o funcionamento necessário para os formulários do site.
 
 
-## Privacidade
-Os dados coletados são utilizados exclusivamente para organização das doações e contato com os participantes do projeto.
-As informações são enviadas por meio de serviço externo de processamento de formulários (FormSubmit) e armazenadas apenas na conta de e-mail responsável pela gestão do projeto.
-O envio do formulário implica concordância com essa finalidade de uso dos dados.
-
-
 ## Estrutura de Arquivos
 ```
 ProjetoAvivamento/
@@ -125,6 +119,12 @@ RU: 5151223
 
 ## Informação Adicional
 Este projeto foi desenvolvido para fins acadêmicos e de extensão comunitária.
+
+
+## Privacidade
+Os dados coletados são utilizados exclusivamente para organização das doações e contato com os participantes do projeto.
+As informações são enviadas por meio de serviço externo de processamento de formulários (FormSubmit) e armazenadas apenas na conta de e-mail responsável pela gestão do projeto.
+O envio do formulário implica concordância com essa finalidade de uso dos dados.
 
 
 ## Contribuições
